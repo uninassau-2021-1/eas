@@ -1,0 +1,40 @@
+HELP.md
+target/
+!**/fpdd/.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### BACKEND ###
+/codigos/backend/fpdd/.apt_generated
+/codigos/backend/fpdd/.classpath
+/codigos/backend/fpdd/.factorypath
+/codigos/backend/fpdd/.project
+/codigos/backend/fpdd/.settings
+/codigos/backend/fpdd/.springBeans
+/codigos/backend/fpdd/.sts4-cache
+/codigos/backend/fpdd/target/*
+/codigos/backend/fpdd/.settings/*
+/codigos/backend/fpdd/.tern-project
+/codigos/backend/fpdd/target/
+/codigos/backend/fpdd/src/test/logs/
+/codigos/backend/fpdd/src/test/logs/*
+/codigos/backend/fpdd/bin/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/

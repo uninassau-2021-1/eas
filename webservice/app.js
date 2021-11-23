@@ -10,6 +10,8 @@ var usersRouter = require('./routes/users');
 
 var accessRouter = require('./routes/access');
 var cpfRouter = require('./routes/cpf');
+var cnpjRouter = require('./routes/cnpj');
+var criarUsuarioRouter = require('./routes/criar_usuario');
 
 var app = express();
 
@@ -33,6 +35,8 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/access', accessRouter);
 app.use('/cpf', cpfRouter);
+app.use('/cnpj', cnpjRouter);
+app.use('/criarUsuario', criarUsuarioRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

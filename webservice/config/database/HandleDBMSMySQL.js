@@ -32,8 +32,23 @@ class HandleDBMSMySQL {
     }
 
     queryInsert(sqlInsert) {
-        console.log('chegou aqui ' + sqlInsert);
+        console.log('queryInsert em HandleDBMSMySQL: ' + sqlInsert);
         this.connection.query(sqlInsert);
+    }
+
+    
+    close() {
+        console.log('fechando a conexão com o banco');
+        return new Promise((resolve, reject) => {
+        this.connection.end(err => {
+            if (err) {
+            console.error(err);
+            reject(err);
+            } else {
+            resolve();
+            }
+        });
+        });
     }
 }
 
